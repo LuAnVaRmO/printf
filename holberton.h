@@ -6,6 +6,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+char buffer[1024];
 int _putchar(char c);
 int _printf(const char *format, ...);
 int (*get_op_func(const char *s))(va_list);
