@@ -1,0 +1,17 @@
+.TH man 3 "17 Mar 2020" "0.1" "_printf man page"
+.SH NAME
+.B _printf
+- prints all data passed.
+.SH SYNOPSIS
+.B int _printf(const char * format, ...);
+.SH DESCRIPTION
+Holberton School is a project-based alternative to college for the next generation of software engineers.
+.SH OPTIONS
+.B holberton
+does not take any options. However, you can supply studentname.
+.SH SEE ALSO
+See man printf(3).
+.SH BUGS
+No known bugs. This function does not handle flags nor precision.
+.SH AUTHOR
+Luis Angel Vargas Mosquera and Andres Felipe Miranda Gomez, Cohort 11, Holberton School, Cali.
