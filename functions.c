@@ -29,6 +29,15 @@ int _prints(va_list s)
 	return (count);
 }
 /**
+ * _printp - function that prints percentage sign
+ * @c: %
+ * Return: numbesr of printed chars
+ */
+int _printp(__attribute__((unused))va_list c)
+{
+	return (_putchar('%'));
+}
+/**
 * _printd - print d
 * @d: integer
 * Return: count
