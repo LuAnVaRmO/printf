@@ -31,7 +31,7 @@ stdout = Holberton
 .SH OPTIONS
 .sp
 The _printf besides receiving a string of charaters it can also receive what we call
-.BI conversion specifiers.
+.B conversion specifiers.
 In this case, insted of receive a string of chars, the argument will receive the % char followed
 by a conversion specifier that is a single character (It has to be inside double quotes "%specifier"). Depending on the type it will print the corresponding output.
 .sp

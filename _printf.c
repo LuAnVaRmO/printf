@@ -44,17 +44,16 @@ int _printf(const char *format, ...)
 
 	va_start(funclist, format);
 
-	if (format == NULL)
-		return (-1);
-
-	while (format && format[scans])
+	while (format[scans])
 	{
-		if (format[scans] && format[scans] != '%')
+		if (format[scans] != '%')
 			countf += _putchar(format[scans]);
 		if (format[scans] == '%')
 		{
 			while (format[scans + 1] == ' ')
-				scans++;
+			{
+			       scans++;
+		     	}
 			if (format[scans + 1] == '\0')
 				return (-1);
 
@@ -68,10 +67,11 @@ int _printf(const char *format, ...)
 
 			else
 			{
-			countf += putchar('%');
+			        countf += (_putchar(format[scans]));
+			}
 		}
+		scans++;
 	}
-	scans++;
-	}
+	va_end(funclist);
 	return (countf);
 }
