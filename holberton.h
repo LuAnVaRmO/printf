@@ -5,7 +5,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <stdio.h>
-
+#define UNUSED(x) (void)(x)
 char buffer[1024];
 int _putchar(char c);
 int _printf(const char *format, ...);
