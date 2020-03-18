@@ -31,7 +31,7 @@ int _prints(va_list s)
 /**
  * _printp - function that prints percentage sign
  * @c: %
- * Return: number of printed chars
+ * Return: numbesr of printed chars
  */
 int _printp(__attribute__((unused))va_list c)
 {
