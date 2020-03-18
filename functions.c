@@ -20,8 +20,7 @@ int _prints(va_list s)
 
 	if (ptr == NULL)
 	{
-		ptr = "(NULL)";
-		return(*ptr);
+		return (write(1, "(null)", 6));
 	}
 	for (i = 0; ptr[i]; i++, count++)
 	{
