@@ -12,7 +12,6 @@ int _printf(const char *format, ...);
 int (*get_op_func(const char *s))(va_list);
 int _printc(va_list c);
 int _prints(va_list s);
-int _printp(__attribute__((unused))va_list c);
 int _printd(va_list d);
 int _printi(va_list i);
 /**
