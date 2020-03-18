@@ -50,10 +50,9 @@ int _printf(const char *format, ...)
 			countf += _putchar(format[scans]);
 		if (format[scans] == '%')
 		{
-			while (format[scans + 1] == ' ')
-			{
-			       scans++;
-		     	}
+			while ((format[scans + 1]) == ' ')
+				scans++;
+
 			if (format[scans + 1] == '\0')
 				return (-1);
 
@@ -67,7 +66,7 @@ int _printf(const char *format, ...)
 
 			else
 			{
-			        countf += (_putchar(format[scans]));
+				countf += (_putchar(format[scans]));
 			}
 		}
 		scans++;
