@@ -19,8 +19,10 @@ int _prints(va_list s)
 	char *ptr = va_arg(s, char *);
 
 	if (ptr == NULL)
+	{
 		ptr = "(NULL)";
-
+		return(*ptr);
+	}
 	for (i = 0; ptr[i]; i++, count++)
 	{
 		_putchar(ptr[i]);
