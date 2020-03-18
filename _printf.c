@@ -14,6 +14,7 @@ int (*get_op_func(const char *s))(va_list)
 		{"c", _printc},
 		{"i", _printi},
 		{"d", _printd},
+		{"%", _printp},
 		{NULL, NULL}
 	};
 	for (i = 0; tipo[i].type != NULL; i++)
