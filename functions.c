@@ -6,15 +6,8 @@
  */
 int _printc(va_list c)
 {
-	char ch = (char)va_arg(c, int);
-	int count = 0;
-
-	_putchar(ch);
-	count++;
-
-	return (count);
+	return (_putchar(va_arg(c, int)));
 }
-
 /**
  * _prints - Print string
  * @s: string
