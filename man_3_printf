@@ -5,10 +5,44 @@
 .SH SYNOPSIS
 .B int _printf(const char * format, ...);
 .SH DESCRIPTION
-Holberton School is a project-based alternative to college for the next generation of software engineers.
+_printf is a function like printf.
+.sp
+That function is like printf, produce an output according to the format.
+.sp
+This exercise was done in Holberton School
+.sp
+.B Return
+.sp
+The number of characters printed excluiding the null value.
+.sp
+.B Output
+.sp
+This function write to stdout.
+.sp
+.B Format:
+.sp
+The function receive a string of characters writed between double quotes "".
+.sp
+.B Example
+.sp
+_printf("Holberton");
+.sp
+stdout = Holberton
 .SH OPTIONS
-.B holberton
-does not take any options. However, you can supply studentname.
+.sp
+The _printf besides receiving a string of charaters it can also receive what we call
+.BI conversion specifiers.
+In this case, insted of receive a string of chars, the argument will receive the % char followed
+by a conversion specifier that is a single character (It has to be inside double quotes "%specifier"). Depending on the type it will print the corresponding output.
+.sp
+.PP
+After the % followed by the specifier, a comma (,) will separate it from the next argument that must be avariable that has the same type of the char specifier.
+.sp
+.B Example
+.sp
+To invoke the function passing specifiers to it:
+.sp
+_printf("%specifier", variable of type specifier);
 .SH SEE ALSO
 See man printf(3).
 .SH BUGS
